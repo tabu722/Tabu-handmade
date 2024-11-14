@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "DM Sans", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+textarea,
+input,
+button,
+a {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+    height: 62px;
+    background: #5d3bee;
+    color: #fdfdfd;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    --color: #5d3bee;
+
+    color: var(--color);
+    background: #fff;
+    border: 1px solid var(--color);
+}
+
+/* Header */
+.header {
+    background: #fbfaff;
+    padding-top: 20px;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1330px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-email {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid #5d3bee33;
+    cursor: pointer;
+}
+
+.email-logo {
+    width: 24px;
+    height: 16px;
+}
+
+.email-link {
+    color: #080415;
+    font-size: 2.2rem;
+    line-height: 1.36;
+    text-decoration: underline;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+}
+
+.email-checkbox:checked ~ .email-link {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    padding: 10px 21px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transition: 0.25s;
+}
+
+.nav-link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    margin-top: 44px;
+}
+
+.hero-logo__small {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 154px;
+}
+
+.hero-media {
+    position: relative;
+    width: 514px;
+}
+
+.hero-img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+.hero-icon-large {
+    position: absolute;
+    left: -211px;
+    top: -80px;
+    pointer-events: none;
+}
+
+.hero-heading {
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -3.2px;
+}
+
+.hero-desc {
+    width: 370px;
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.hero-action {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.hero-link {
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66;
+}
+
+.hero-link:hover {
+    text-decoration: underline;
+}
+
+.hero-social {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.hero-follow {
+    color: #51586a;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.87;
+}
+
+.hero-social__row {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero-social__row > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #08041533;
+}
+
+/* Brand */
+.brand {
+    margin-top: 100px;
+}
+
+.brand-inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 90px;
+}
+
+.brand-heading {
+    width: 253px;
+    margin-left: 100px;
+    position: relative;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: -1.68px;
+    flex-shrink: 0;
+}
+
+.brand-heading::before {
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    content: "";
+    display: inline-block;
+    width: 86px;
+    height: 2px;
+    background: #5d3bee;
+}
+
+.brand-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.brand-name {
+    white-space: nowrap;
+    color: #080415;
+}
