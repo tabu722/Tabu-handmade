@@ -90,6 +90,17 @@
             rel="stylesheet"
         />
 
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Grid System -->
         <link rel="stylesheet" href="./assets/grid.css" />
 
@@ -394,9 +405,11 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4 col-12">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <!-- Box 1 -->
-                            <article class="special-box">
+                            <article
+                                class="special-box animate__animated animate__flipInY animate__delay-1s wow"
+                            >
                                 <div class="special-box__icon">
                                     <img
                                         src="./assets/img/light.svg"
@@ -413,9 +426,11 @@
                                 </p>
                             </article>
                         </div>
-                        <div class="col-lg-4 col-12">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <!-- Box 2 -->
-                            <article class="special-box">
+                            <article
+                                class="special-box animate__animated animate__flipInY animate__delay-2s wow"
+                            >
                                 <div class="special-box__icon">
                                     <img
                                         src="./assets/img/pencil.svg"
@@ -432,9 +447,11 @@
                                 </p>
                             </article>
                         </div>
-                        <div class="col-lg-4 col-12">
+                        <div class="col-lg-4 col-md-6 col-12">
                             <!-- Box 3 -->
-                            <article class="special-box">
+                            <article
+                                class="special-box animate__animated animate__flipInY animate__delay-3s wow"
+                            >
                                 <div class="special-box__icon">
                                     <img
                                         src="./assets/img/phone-svg.svg"
@@ -493,7 +510,7 @@
                     <div class="row row-cols-lg-2">
                         <div class="col-lg-6 col-12">
                             <!-- Project 1 -->
-                            <article class="project-box">
+                            <article class="project-box" data-aos="fade-up">
                                 <div class="project-content">
                                     <a
                                         href="#!"
@@ -532,7 +549,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <!-- Project 2 -->
-                            <article class="project-box">
+                            <article class="project-box" data-aos="fade-up">
                                 <div class="project-content">
                                     <a
                                         href="#!"
@@ -571,7 +588,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <!-- Project 3 -->
-                            <article class="project-box">
+                            <article class="project-box" data-aos="fade-up">
                                 <div class="project-content">
                                     <a
                                         href="#!"
@@ -610,7 +627,7 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <!-- Project 4 -->
-                            <article class="project-box">
+                            <article class="project-box" data-aos="fade-up">
                                 <div class="project-content">
                                     <a
                                         href="#!"
@@ -736,7 +753,11 @@
                         >
                     </div>
 
-                    <section class="inter-footer">
+                    <section
+                        class="inter-footer"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
                         <h2 class="inter-footer__heading">What people says</h2>
                         <p class="inter-footer__desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -1059,7 +1080,7 @@
                                     <img
                                         src="./assets/img/atmosphere-2.png"
                                         alt=""
-                                        class="atmosphere__img"
+                                        class="atmosphere__img atmosphere__img--hidden"
                                     />
                                 </a>
                             </div>
@@ -1068,7 +1089,7 @@
                                     <img
                                         src="./assets/img/atmosphere-3.png"
                                         alt=""
-                                        class="atmosphere__img"
+                                        class="atmosphere__img atmosphere__img--hidden"
                                     />
                                 </a>
                             </div>
@@ -1102,7 +1123,11 @@
             <!-- Call -->
             <section class="call">
                 <div class="container">
-                    <div class="call__inner">
+                    <div
+                        class="call__inner"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
                         <div class="call__icon">
                             <img
                                 src="./assets/img/call__icon.svg"
@@ -1206,5 +1231,11 @@
                 </div>
             </div>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            new WOW().init();
+            AOS.init();
+        </script>
     </body>
 </html>

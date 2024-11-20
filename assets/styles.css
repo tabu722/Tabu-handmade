@@ -743,8 +743,8 @@ a {
 
 .dots-active:has(:checked)::after {
     position: absolute;
-    top: 4.1px;
-    left: 5.3px;
+    top: 4px;
+    left: 5.5px;
     width: 12px;
     height: 12px;
     background: #5d3bee;
