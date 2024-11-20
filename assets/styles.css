@@ -144,10 +144,12 @@ a {
 .hero-media {
     position: relative;
     width: 514px;
+    height: 705px;
 }
 
 .hero-img {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     z-index: 1;
     display: block;
     width: 100%;
